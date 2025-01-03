@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Data from "./Data";
+import { IoMdRadioButtonOn } from "react-icons/io";
 const Navbar = () => {
   const [showAll, setShowAll] = useState(false);
   const [isBlackThem, setIsBlackThem] = useState(true);
@@ -11,10 +12,10 @@ const Navbar = () => {
   }
   return (
     <div
-      className={`bg-black text-white space-x-4 space-y-3 ${
-        isBlackThem ? "bg-black" : "bg-sky-950"
-      }`}
-    >
+    className={`bg-black text-white space-x-4 space-y-3 ${
+      isBlackThem ? "bg-black" : "bg-sky-950"
+    }`}>
+    
       <div className="flex justify-between pt-8 pl-12">
         <h1 className="text-3xl font-bold pt-4">well come to my website</h1>
         <div className="space-x-4 pt-4 pb-8">
@@ -23,10 +24,10 @@ const Navbar = () => {
           <a href="">contact</a>
         </div>
         <button
-          className="bg-gradient-to-r from-pink-500 to-blue-500 p-1 rounded-full"
+          className="mr-4 bg-gradient-to-r from-pink-500 to-blue-500 p-1 rounded-full"
           onClick={() => setIsBlackThem((prev) => !prev)}
         >
-          change color
+          <IoMdRadioButtonOn className="text-red-500"/>
         </button>
       </div>
       <p className="text-md font-bold space-y-3">{pro}</p>

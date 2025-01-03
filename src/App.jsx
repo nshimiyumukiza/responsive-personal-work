@@ -4,7 +4,7 @@ import LikeButton from './Components/LikeButton'
 
 const App = () => {
   return (
-    <div>
+    <div >
      <Navbar /> 
      <LikeButton />
     </div>

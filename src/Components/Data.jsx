@@ -11,7 +11,7 @@ const Data = ({ name, price, image }) => {
         <h1 className="pt-4">{name}</h1>
         <h2>{price} rwf</h2>
 
-        <div onClick={()=>setIsLiked(prev=>!prev)} >{isLiked ? <AiOutlineLike /> : <AiFillLike />}</div>
+        <div onClick={()=>setIsLiked(prev=>!prev)} >{isLiked ? <AiOutlineLike /> : <AiFillLike className="text-red-500"/>}</div>
       
       </div>
       
